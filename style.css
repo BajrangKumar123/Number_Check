@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, rgb(126, 125, 137), rgb(4, 26, 45));
+}
+
+.head {
+    display: inline-block;
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+    background: conic-gradient(white rgb(126, 125, 137), rgb(4, 26, 45));
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+    color: rgb(10, 2, 2);
+    background: linear-gradient(to right, rgb(233, 250, 3), rgb(76, 0, 255));
+    border-radius: 1rem 7rem;
+}
+
+div.exa2 {
+    place-items: center;
+    /* background: linear-gradient(to right, rgb(62, 255, 18), rgb(6, 77, 6)); */
+    width: 80%;
+    background-color: rgb(131, 91, 107);
+    height: auto;
+    padding: 2rem;
+    margin: auto;
+    border-radius: 50%;
+    animation-name: example2;
+    animation-duration: 4s;
+    animation-iteration-count: 50;
+}
+
+div.exa1 {
+    text-align: center;
+    /* background: linear-gradient(to right, rgb(62, 255, 18), rgb(6, 77, 6)); */
+    width: 30%;
+    background-color: rgb(131, 91, 107);
+    height: auto;
+    padding: 4rem;
+    margin: auto;
+    border-radius: 50%;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 50;
+}
+
+
+div.exa3 {
+    text-align: center;
+    /* background: linear-gradient(to right, rgb(62, 255, 18), rgb(6, 77, 6)); */
+    width: 40%;
+    background-color: rgb(131, 91, 107);
+    height: auto;
+    padding: 3rem;
+    margin: auto;
+    border-radius: 50%;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 50;
+}
+
+@keyframes example {
+    0% {
+        background: linear-gradient(rgb(238, 38, 8), rgb(31, 99, 247));
+    }
+
+    25% {
+        background: linear-gradient(rgb(10, 72, 165), rgb(0, 0, 0));
+    }
+
+    50% {
+        background: linear-gradient(rgb(15, 245, 53), rgb(88, 2, 2));
+    }
+
+    100% {
+        background: linear-gradient(rgb(170, 6, 44), rgb(255, 255, 255));
+    }
+}
+
+
+@keyframes example2 {
+    0% {
+        background: linear-gradient(rgb(193, 140, 132), rgb(31, 99, 247));
+    }
+
+    25% {
+        background: linear-gradient(rgb(10, 165, 162), rgb(0, 0, 0));
+    }
+
+    50% {
+        background: linear-gradient(rgb(52, 53, 52), rgb(236, 16, 16));
+    }
+
+    100% {
+        background: linear-gradient(rgb(9, 238, 55), rgb(255, 255, 255));
+    }
+}
+
+input {
+    color: white;
+    background: linear-gradient(rgb(91, 112, 199), rgb(255, 9, 9));
+}
+
+#btn1 {
+    width: 4rem;
+    height: 2rem;
+    transition: width 2s;
+    background: radial-gradient(rgb(9, 200, 28) 40%, rgb(59, 59, 60) 50%);
+}
+
+#btn2 {
+    width: 6rem;
+    height: 2rem;
+    transition: width 2s;
+    background: radial-gradient(rgb(10, 72, 165) 60%, rgb(86, 84, 84) 10%);
+}
+
+#btn1:hover {
+    width: 8rem;
+    height: 3rem;
+    background: radial-gradient(rgb(9, 200, 28) 40%, rgb(59, 59, 60) 50%);
+}
+
+#btn2:hover {
+    width: 9rem;
+    height: 3rem;
+    background: radial-gradient(rgb(10, 72, 165) 60%, rgb(86, 84, 84) 10%);
+}

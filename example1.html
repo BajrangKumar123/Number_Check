@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF Else Statements</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1><u>Check Whether a number is +ve or -ve or zero</u></h1><br>
+    <hr>
+    <br>
+    <div class="exa2">
+        <div class="exa1">
+            <label for="num"><b>Enter a Number :</b></label><br>
+            <input type="number" id="num" min="1" max="100" required><br><br>
+            <h2 id="result"></h2><br>
+            <button id="btn2" type="button" onclick="checkNumber()"><b>Check Me</b></button>
+        </div>
+    </div>
+
+</body>
+<script>
+    function checkNumber() {
+        var numb = Number(document.getElementById("num").value);
+        if (numb > 0) {
+            document.getElementById("result").innerHTML = "Given Number is Positive";
+        }
+        else if (numb < 0) {
+            document.getElementById("result").innerHTML = "Given Number is Negative";
+        }
+        else {
+            document.getElementById("result").innerHTML = "Given Number is Zero";
+        }
+    }
+</script>
+
+</html>
